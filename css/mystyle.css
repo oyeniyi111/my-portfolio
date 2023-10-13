@@ -501,7 +501,7 @@ nav a:hover{
     margin-bottom: 4rem;
    }
   
-   .text{
+   .texthome .text{
     background-color: #1e2631;
     padding: 10px;
     border-right: 2px solid #5bc908;
@@ -525,8 +525,8 @@ nav a:hover{
   
   
   
-  /* @media screen and (max-width: 856px){
-    .text{
+@media screen and (max-width: 856px){
+.texthome .text{
       width: 100%;
     }
   }
@@ -541,7 +541,7 @@ nav a:hover{
     .hire-us-tp h1{
       font-size: 1.7em;
     }
-  } */
+  } 
   
   
   
