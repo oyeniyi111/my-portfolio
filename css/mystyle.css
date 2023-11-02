@@ -1137,7 +1137,7 @@ nav a:hover{
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  z-index: 2;   
+  z-index: 301;   
   opacity: 0;
   visibility: hidden;
   transition: .3s;
@@ -1479,139 +1479,191 @@ transform-origin: 100% 50%;
   
   
   /* why me */
-  
-  .whyme-section{
-    background: linear-gradient(to top,#283a53,#030913);
-  }
-  
-  .whyme{
-    display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    color: #ff8b00;
-   padding: 10px;
-  }
-  
+
+.whyme-section{
+  background: linear-gradient(to top,#283a53,#030913);
+}
+
+.whyme{
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  color: #ff8b00;
+ padding: 10px;
+}
+
+.whyme .me{
+  background-color: #1e2631;
+  padding: 7px;
+  border-radius: 7px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+.whyme .Summary{
+  padding: 7px;
+}
+
+
+.whyme .me::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: ease-in-out 0.3s;
+  z-index: -1;
+}
+
+.whyme .me:hover::before {
+  background-color: #020b18;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.whyme .me:hover .bx{
+  background-color: #ff8b00;
+  border: 1px solid #ff8b00;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+
+.whyme .numbering{
+  padding: 5px;
+  display: block;
+  color: yellowgreen;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #020b18;
+}
+
+.whymehead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #8b670c;
+  gap: 10px;
+}
+
+.whymehead h3{
+  font-size: 14px;
+}
+
+.whymehead .bx{
+  padding: 6px;
+  border: 1px dashed #fdba04;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.whyme .me-me{
+  padding: 7px;
+  border-radius: 7px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  background: #1e2631;
+  /* border-color:  rgb(141, 36, 36); */
+  border-color:  #bef049;
+  animation: box 3s infinite;
+}
+
+
+.whyme .me-me::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: ease-in-out 0.3s;
+  z-index: -1;
+}
+
+.whyme .me-me:hover::before {
+  background-color: #020b18;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.whyme .me-me:hover .bx{
+  background-color: #ff8b00;
+  border: 1px solid #ff8b00;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@keyframes move{
+  0%{ transform: translateX(0); }
+  50%{ transform: translateX(5px); }
+  100%{ transform: translateX(0); }
+}
+@keyframes box{
+  0%{ box-shadow: none; }
+  50%{ box-shadow: 0 0 20px #fdba04; }
+  100%{ box-shadow: none; }
+}
+
+
+
+
+@media screen and (max-width: 1202px){
   .whyme .me{
-    background-color: #1e2631;
-    padding: 7px;
-    border-radius: 7px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+    font-size: small;
   }
-  
-  
-  .whyme .Summary{
-    padding: 7px;
-  }
-  
-  
-  .whyme .me::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    transition: ease-in-out 0.3s;
-    z-index: -1;
-  }
-  
-  .whyme .me:hover::before {
-    background-color: #020b18;
-    height: 100%;
-    border-radius: 0px;
-  }
-  
-  .whyme .me:hover .bx{
-    background-color: #ff8b00;
-    border: 1px solid #ff8b00;
-    color: #fff;
-    transform: scale(1.1);
-  }
-  
-  
-  .whyme .numbering{
-    padding: 5px;
-    display: block;
-    color: yellowgreen;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: #020b18;
-  }
-  
+
   .whymehead{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #8b670c;
-    gap: 10px;
+    gap: 6px;
   }
-  
+
   .whymehead h3{
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .whymehead .bx{
-    padding: 6px;
-    border: 1px dashed #fdba04;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 18px;
-    transition: all 0.3s ease-in-out;
+    padding: 5px;
+    font-size: 15px;
   }
-  
-  
-  
-  
-  @media screen and (max-width: 1202px){
-    .whyme .me{
-      font-size: small;
-    }
-  
-    .whymehead{
-      gap: 6px;
-    }
-  
-    .whymehead h3{
-      font-size: 12px;
-    }
-    
-    .whymehead .bx{
-      padding: 5px;
-      font-size: 15px;
-    }
-  
-    .whyme{
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-  
-    .whyme .numbering{
-      padding: 3px;
-      font-size: small;
-    }
+
+  .whyme{
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  
-  
-  @media screen and (max-width: 884px){
-    .whyme{
-      grid-template-columns: repeat(2, 1fr);
-    }  
+
+
+  .whyme .numbering{
+    padding: 3px;
+    font-size: small;
   }
-  
-  @media screen and (max-width: 666px){
-    .whyme{
-      grid-template-columns: repeat(1, 1fr);
-    }
+}
+
+
+
+@media screen and (max-width: 884px){
+  .whyme{
+    grid-template-columns: repeat(2, 1fr);
+  }  
+}
+
+@media screen and (max-width: 666px){
+  .whyme{
+    grid-template-columns: repeat(1, 1fr);
   }
+}
   
   
   
