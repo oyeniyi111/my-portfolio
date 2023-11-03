@@ -1275,117 +1275,170 @@ nav a:hover{
 
 /* Responsibilities */
 .responsiblitySection{
-overflow: hidden;
-position: relative;
-background:url("../img/responsibility.jpg") no-repeat;
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
-z-index: 0;
+  overflow: hidden;
+  position: relative;
+  background:url("../img/responsibility.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+
+.resp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.resp svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 140px;
+}
+
+.resp .shape-fill {
+  fill: #0b1421;
 }
 
 .responsiblitySection::before{
-content: '';
-background-color: rgba(44, 62, 80, 0.7);
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-z-index: -2;
+  content: '';
+  background-color: rgba(44, 62, 80, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -2;
 }
 .responsiblity{
-color: #01050c;
-column-count: 3;
-margin: 0 auto;
-margin: 5px;
-margin-bottom: 10px;
-z-index: 5;
+  color: #01050c;
+  column-count: 3;
+  margin: 0 auto;
+  margin: 5px;
+  z-index: 5;
+  margin-bottom: 8rem;
 }
 
+/* .responsiblity ul{
+  margin-bottom: 5rem;
+} */
+
 .responsiblity li{
-display: flex;
-gap: 10px;
-margin-bottom: 9px;
-border-radius: 5px;
-padding: 3px;
-text-transform: capitalize;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 9px;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .responsiblity li .bx{
-color: #fdba04;
+  color: #fdba04;
 }
-
-
 
 
 .responsiblity li{
-color: #fdba04;
-font-family: 'Dosis', sans-serif;
-text-transform: capitalize;
-display: inline-block;
-position: relative;
-z-index: 1;
-transition: all 0.7s;
-overflow: hidden;
+  color: #fdba04;
+  font-family: 'Dosis', sans-serif;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  transition: all 0.7s;
+  overflow: hidden;
 }
 .responsiblity li:focus,
 .responsiblity li:hover{
-color: #fff;
+  color: #fff;
 }
 
 .responsiblity li:hover .bx{
-color: #fff;
+  color: #fff;
 }
 
 .responsiblity li:before,
 .responsiblity li:after{
-content: "";
-position: absolute;
-width: 100%;
-left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
 }
 .responsiblity li:before{
-/* background: #FCF7F9; */
-background: linear-gradient(to top,#283a53,#02070f);
-height: 100%;
-box-shadow: 0 0 0 3px #FCF7F9;
-transform-origin: 100% 50%;
-transform: scale(0, 1);
-top: 0;
-z-index: -1;
-transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.1s;
+  /* background: #FCF7F9; */
+  background: linear-gradient(to top,#283a53,#02070f);
+  height: 100%;
+  box-shadow: 0 0 0 3px #FCF7F9;
+  transform-origin: 100% 50%;
+  transform: scale(0, 1);
+  top: 0;
+  z-index: -1;
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.1s;
 }
 .responsiblity li:after{
-/* background: rgba(255, 255, 255, 0.3);
-height: 2px; */
-transform-origin: 0% 50%;
-bottom: 0;
-transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.1s;
+  /* background: rgba(255, 255, 255, 0.3);
+  height: 2px; */
+  transform-origin: 0% 50%;
+  bottom: 0;
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.1s;
 }
 .responsiblity li:hover:before{
-transform: scale(1);
-transform-origin: 0 50%;
+  transform: scale(1);
+  transform-origin: 0 50%;
 }
 .responsiblity li:hover:after{
-transform: scale(0, 1);
-transform-origin: 100% 50%;
+  transform: scale(0, 1);
+  transform-origin: 100% 50%;
 }
 @media only screen and (max-width: 767px){
-.responsiblity li{ margin-bottom: 30px; }
+  .responsiblity li{ margin-bottom: 30px; }
 }
 
+
+/* .responsiblity li:hover{
+  background: linear-gradient(to top,#283a53,#02070f);
+  color: #fff;
+}
+
+.responsiblity li:hover .bx{
+  color: #fff;
+} */
+
+
+@media only screen and (max-width: 1081px){
+  .responsiblity{
+    margin-bottom: 9rem;
+  }
+}
+
+@media only screen and (max-width: 989px){
+  .responsiblity{
+    margin-bottom: 7rem;
+  }
+}
+
+
+@media only screen and (max-width: 895px){
+  .responsiblity{
+    margin-bottom: 8rem;
+  }
+}
 
 
 @media only screen and (max-width: 833px){
-.responsiblity{
-  column-count: 2;
-}
+  .responsiblity{
+    column-count: 2;
+    
+  }
 }
 
 @media only screen and (max-width: 833px){
-.responsiblity{
-  column-count: 1;
-}
+  .responsiblity{
+    column-count: 1;
+  }
 }
 
 
