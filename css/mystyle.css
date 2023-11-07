@@ -1393,35 +1393,11 @@ nav a:hover{
   transform: scale(0, 1);
   transform-origin: 100% 50%;
 }
-@media only screen and (max-width: 767px){
-  .responsiblity li{ margin-bottom: 30px; }
-}
 
 
-/* .responsiblity li:hover{
-  background: linear-gradient(to top,#283a53,#02070f);
-  color: #fff;
-}
-
-.responsiblity li:hover .bx{
-  color: #fff;
-} */
 
 
-@media only screen and (max-width: 1081px){
-  .responsiblity{
-    margin-bottom: 9rem;
-  }
-}
-
-@media only screen and (max-width: 989px){
-  .responsiblity{
-    margin-bottom: 7rem;
-  }
-}
-
-
-@media only screen and (max-width: 895px){
+@media only screen and (max-width: 1346px){
   .responsiblity{
     margin-bottom: 8rem;
   }
@@ -1431,7 +1407,7 @@ nav a:hover{
 @media only screen and (max-width: 833px){
   .responsiblity{
     column-count: 2;
-    
+    margin-bottom: 8rem;
   }
 }
 
@@ -1441,9 +1417,9 @@ nav a:hover{
   }
 }
 
-
-
-
+@media only screen and (max-width: 767px){
+  .responsiblity li{ margin-bottom: 30px; }
+}
 
 
 
@@ -1452,79 +1428,143 @@ nav a:hover{
 
 
   /* accordian */
-.accordion-section{
+  .accordion-section{
     background: linear-gradient(to right,#283a53,#030913);
   }
   
-  .accordionhome{
-    width: 700px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  
-  .accordionhome button{
-    font-size: bold;
-    text-transform: capitalize;
-  }
-  
-  .accordion {
-    background-color: #638549;
-    color: #030913;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #fff;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #030913; 
-    color: #fff;
-  }
-  
-  .panel a{
-    color: darkorange;
-  }
-  
-  .panel a:hover{
-    color: rgb(115, 255, 0);
-  }
-  
-  .panel {
-    padding: 0 18px;
-    display: none;
-    background: linear-gradient(to right, #1e2631,#047a53,#93e923);
-    color: #fff;
-    width: 650px;
+   .accordion{
+    margin: 0 40px;
+    max-width: 600px;
     margin: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  .accordion .tab{
+   position: relative;
+   background-color: #afb8c2;;
+   padding: 0 20px 20px;
+   box-shadow: 0 15px rgba(0, 0, 0, 0.05);
+   border-radius: 5px;
+   overflow: hidden;
+  }
+  
+  .accordion .tab input{
+    appearance: none;
+  
+  }
+  
+  .accordion .tab label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .accordion .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+  }
+  
+  .accordion .tab:hover label::after{
+    color: #333;
+  }
+  
+  .accordion .tab input:checked ~ label::after{
+    transform: rotate(135deg);
+    color: #fff;
+  }
+  
+  .accordion .tab label h2{
+    width: 40px;
+    height: 40px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .accordion .tab input:checked ~ label h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 8em;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  .accordion .tab:nth-child(2) label h2{
+    background: linear-gradient(to left,#283a53,#030913);
+  }
+  
+  .accordion .tab:nth-child(3) label h2{
+    background: linear-gradient(to left,#283a53,#030913);
+  }
+  
+  .accordion .tab:nth-child(4) label h2{
+    background: linear-gradient(to left,#283a53,#030913);
+  }
+  
+  .accordion .tab:nth-child(5) label h2{
+    background: linear-gradient(to left,#283a53,#030913);
+  }
+  
+  .accordion .tab label h3{
+    position: relative;
+    font-weight: 500;
+    color: #333;
+    z-index: 10;
+  }
+  .accordion .tab input:checked ~ label h3{
+    background-color: #afb8c2;;
+    padding: 2px 10px;
+    color: #333;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .accordion .tab .content{
+    max-height: 0;
+    transition: 1s;
     overflow: hidden;
   }
   
-  .panel:hover{
-    transition: all 1s linear;
+  .accordion .tab .content a{
+   color: #ff8b00;
+  }
+  
+  .accordion .tab input:checked ~ .content{
+    max-height: 100vh;
+  }
+  
+  .accordion .tab .content p{
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+  }
+  
+  .accordion .tab input:checked ~ .content p{
+    color: #fff;
   }
   
   
-  @media screen and (max-width: 877px){
-    .accordionhome{
-      width: 100%;
-    }
-  }
-  
-  @media screen and (max-width: 866px){
-    .panel {
-      width: 600px;
-    }
-  }
-  
-  @media screen and (max-width: 818px){
-    .panel {
-      width: 100%;
+  @media screen and (max-width: 671px){
+    .accordion .tab label::after{
+      display: none;
     }
   }
   
@@ -1533,197 +1573,166 @@ nav a:hover{
   
   /* why me */
 
-.whyme-section{
-  background: linear-gradient(to top,#283a53,#030913);
-}
-
-.whyme{
-  display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  color: #ff8b00;
- padding: 10px;
-}
-
-.whyme .me{
-  background-color: #1e2631;
-  padding: 7px;
-  border-radius: 7px;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-
-
-.whyme .Summary{
-  padding: 7px;
-}
-
-
-.whyme .me::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 0;
-  transition: ease-in-out 0.3s;
-  z-index: -1;
-}
-
-.whyme .me:hover::before {
-  background-color: #020b18;
-  height: 100%;
-  border-radius: 0px;
-}
-
-.whyme .me:hover .bx{
-  background-color: #ff8b00;
-  border: 1px solid #ff8b00;
-  color: #fff;
-  transform: scale(1.1);
-}
-
-
-.whyme .numbering{
-  padding: 5px;
-  display: block;
-  color: yellowgreen;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #020b18;
-}
-
-.whymehead{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #8b670c;
-  gap: 10px;
-}
-
-.whymehead h3{
-  font-size: 14px;
-}
-
-.whymehead .bx{
-  padding: 6px;
-  border: 1px dashed #fdba04;
-  color: #fff;
-  border-radius: 50%;
-  font-size: 18px;
-  transition: all 0.3s ease-in-out;
-}
-
-
-
-
-.whyme .me-me{
-  padding: 7px;
-  border-radius: 7px;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-
-  background: #1e2631;
-  /* border-color:  rgb(141, 36, 36); */
-  border-color:  #bef049;
-  animation: box 3s infinite;
-}
-
-
-.whyme .me-me::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 0;
-  transition: ease-in-out 0.3s;
-  z-index: -1;
-}
-
-.whyme .me-me:hover::before {
-  background-color: #020b18;
-  height: 100%;
-  border-radius: 0px;
-}
-
-.whyme .me-me:hover .bx{
-  background-color: #ff8b00;
-  border: 1px solid #ff8b00;
-  color: #fff;
-  transform: scale(1.1);
-}
-
-@keyframes move{
-  0%{ transform: translateX(0); }
-  50%{ transform: translateX(5px); }
-  100%{ transform: translateX(0); }
-}
-@keyframes box{
-  0%{ box-shadow: none; }
-  50%{ box-shadow: 0 0 20px #fdba04; }
-  100%{ box-shadow: none; }
-}
-
-
-
-
-@media screen and (max-width: 1202px){
+  .whyme-section{
+    background: linear-gradient(to top,#283a53,#030913);
+  }
+  
+  .whyme{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    gap: 10px;
+  }
+  
   .whyme .me{
-    font-size: small;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    background: #303a47;
+    padding: 7px;
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
   }
-
+  
+  .whyme .me:nth-child(1){
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  
+  .whyme .me:nth-child(4){
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  
+  
+  .whyme .Summary{
+    padding: 7px;
+    color: #ff8b00;
+  }
+  
+  
+  .whyme .me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: ease-in-out 0.3s;
+    z-index: -1;
+  }
+  
+  .whyme .me:hover::before {
+    background-color: #020b18;
+    height: 100%;
+    border-radius: 0px;
+  }
+  
+  .whyme .me:hover .bx{
+    background-color: #ff8b00;
+    border: 1px solid #ff8b00;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  
+  .whyme .numbering{
+    padding: 5px;
+    display: block;
+    color: yellowgreen;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #020b18;
+  }
+  
   .whymehead{
-    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #8b670c;
+    gap: 10px;
   }
-
+  
+  .whymehead p{
+    color: #ff8b00;
+  }
+  
   .whymehead h3{
-    font-size: 12px;
+    font-size: 14px;
   }
   
   .whymehead .bx{
-    padding: 5px;
-    font-size: 15px;
+    padding: 6px;
+    border: 1px dashed #fdba04;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
   }
-
-  .whyme{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-
-  .whyme .numbering{
-    padding: 3px;
-    font-size: small;
-  }
-}
-
-
-
-@media screen and (max-width: 884px){
-  .whyme{
-    grid-template-columns: repeat(2, 1fr);
-  }  
-}
-
-@media screen and (max-width: 666px){
-  .whyme{
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
   
+  
+  
+  
+  .whyme .me-me{
+    padding: 7px;
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+    background: #303a47;
+    border-color:  #bef049;
+    animation: box 3s infinite;
+  }
+  
+  
+  .whyme .me-me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: ease-in-out 0.3s;
+    z-index: -1;
+  }
+  
+  .whyme .me-me:hover::before {
+    background-color: #020b18;
+    height: 100%;
+    border-radius: 0px;
+  }
+  
+  .whyme .me-me:hover .bx{
+    background-color: #ff8b00;
+    border: 1px solid #ff8b00;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  @keyframes move{
+    0%{ transform: translateX(0); }
+    50%{ transform: translateX(5px); }
+    100%{ transform: translateX(0); }
+  }
+  @keyframes box{
+    0%{ box-shadow: none; }
+    50%{ box-shadow: 0 0 20px #fdba04; }
+    100%{ box-shadow: none; }
+  }
   
   
   
   /* Css auto play */
   .chosemeautotype{
-    /* font-size: 20px; */
     font-weight: bold;
   }
   
@@ -1755,6 +1764,34 @@ nav a:hover{
     
      100%{
         content: "Your satisfaction is the priority";
+    }
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1249px){
+    .whyme .me:nth-child(7){
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+  
+    .whyme .me:nth-child(8){
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+  }
+  
+  @media screen and (max-width: 772px){
+    .whyme{
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-template-rows: minmax(auto, auto);
+    }
+  
+    .whyme .me{
+      grid-column: unset !important;
+      grid-row:  unset !important;
     }
   }
 
