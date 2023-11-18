@@ -295,6 +295,7 @@ nav a:hover{
 
   /* home */
   .homecontent{
+    animation: slideInFromBottom 1s ease-in;
     margin-top: 170px;
     z-index: 5;
   }
