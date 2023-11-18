@@ -2286,7 +2286,7 @@ nav a:hover{
  
 
 
-  /* class */
+/* class */
   .classhome{
     display: flex;
     flex-direction: row;
@@ -2344,7 +2344,7 @@ nav a:hover{
 
 
 
-@media only screen and (max-width: 1249px){
+  @media only screen and (max-width: 1249px){
     .classhome .class-text h4{
       margin-bottom: 3rem;
     }
