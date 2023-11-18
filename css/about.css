@@ -1790,7 +1790,9 @@
       }
      }
 
-     /* id card */
+
+
+    /* id card */
 
    .idcard-grid{
     float: right;
@@ -1799,7 +1801,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    border: 1px solid #fdba04;
+    border-right: 2px solid #fdba04;
     margin-top: 2rem;
    }
 
