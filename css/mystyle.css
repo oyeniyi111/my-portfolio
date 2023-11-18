@@ -34,6 +34,48 @@ input{
 
 
 
+/* Animation */
+@keyframes slideInFromLeft{
+  0%{
+      transform: translateX(-100%);
+  }
+  
+  100%{
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight{
+  0%{
+      transform: translateX(100%);
+  }
+  
+  100%{
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop{
+  0%{
+      transform: translateY(-100%);
+  }
+  
+  100%{
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom{
+  0%{
+      transform: translateY(50%);
+  }
+  
+  100%{
+      transform: translateX(0);
+  }
+}
+
+
 
 
 
@@ -2301,7 +2343,7 @@ nav a:hover{
 
 
 
-  @media only screen and (max-width: 1170px){
+@media only screen and (max-width: 1249px){
     .classhome .class-text h4{
       margin-bottom: 3rem;
     }
@@ -2317,30 +2359,8 @@ nav a:hover{
     }
   }
 
-  @media only screen and (max-width: 1113px){
-    .classhome .class-text{
-      width: 60%;
-      padding: 10px;
-      color: #fff;
-    }
-
-    .classhome img{
-      width: 40%;
-    }
-
-  }
-
-  @media only screen and (max-width: 1007px){
-    .classhome .class-text h4{
-      margin-bottom: 1.5rem;
-    }
-
-    .classhome .class-text h2{
-      margin-bottom: 0.6rem;
-    }
-  }
-
-  @media only screen and (max-width: 998px){
+  
+  @media only screen and (max-width: 1177px){
     .classhome .class-text h2{
       font-size: 20px;
     }
@@ -2352,7 +2372,17 @@ nav a:hover{
     } 
   }
 
-  @media only screen and (max-width: 871px){
+  @media only screen and (max-width: 1028px){
+    .classhome .class-text h4{
+      margin-bottom: 1.5rem;
+    }
+
+    .classhome .class-text h2{
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  @media only screen and (max-width: 965px){
     .classhome .class-text h2{
       font-size: 17px;
       margin-bottom: 0.4rem;
@@ -2363,7 +2393,20 @@ nav a:hover{
     } 
   }
 
-  @media only screen and (max-width: 760px){
+  @media only screen and (max-width: 843px){
+    .classhome .class-text p{
+      font-size: 12px;
+    } 
+  }
+
+  @media only screen and (max-width: 833px){
+    .classhome .class-text p{
+      font-size: 11px;
+    } 
+  }
+
+
+  @media only screen and (max-width: 797px){
     .classhome{
       display: flex;
       flex-direction: column;
@@ -2408,26 +2451,25 @@ nav a:hover{
   }
 
 
-  @media only screen and (max-width: 657px){
+  @media only screen and (max-width: 677px){
     .classhome{
       width: 100%;
     }
   }
 
-  @media only screen and (max-width:483px){
+  @media only screen and (max-width: 565px){
     .classhome .class-text h2{
       font-size: 25px;
     }
   }
 
-
-  @media only screen and (max-width:422px){
+  @media only screen and (max-width:475px){
     .classhome .class-text h2{
       font-size: 20px;
     }
   }
 
-  @media only screen and (max-width: 340px){
+  @media only screen and (max-width: 403px){
     .classhome .class-text h2{
       font-size: 17px;
     }
@@ -2437,7 +2479,7 @@ nav a:hover{
     }
   }
 
-  @media only screen and (max-width: 279px){
+  @media only screen and (max-width: 327px){
     .classhome .class-text h2{
       font-size: 15px;
     }
