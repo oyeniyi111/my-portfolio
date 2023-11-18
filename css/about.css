@@ -1572,7 +1572,7 @@
   
   
   
-    @media only screen and (max-width: 1170px){
+    @media only screen and (max-width: 1370px){
       .classhome .class-text h4{
         margin-bottom: 3rem;
       }
@@ -1587,44 +1587,9 @@
         margin-bottom: 10px;
       }
     }
-  
-    @media only screen and (max-width: 1113px){
-      .classhome .class-text{
-        width: 60%;
-        padding: 10px;
-        color: #fff;
-      }
-  
-      .classhome img{
-        width: 40%;
-      }
-  
-      /* .classhome .class-text h4{
-        margin-bottom: 2rem;
-      }
-  
-      .classhome .class-text h2{
-        font-size: 20px;
-        margin-bottom: 1rem;
-      }
-  
-      .classhome .class-text p{
-        font-size: 14px;
-        margin-bottom: 10px;
-      } */
-    }
-  
-    @media only screen and (max-width: 1007px){
-      .classhome .class-text h4{
-        margin-bottom: 1.5rem;
-      }
-  
-      .classhome .class-text h2{
-        margin-bottom: 0.6rem;
-      }
-    }
-  
-    @media only screen and (max-width: 998px){
+
+
+    @media only screen and (max-width: 1362px){
       .classhome .class-text h2{
         font-size: 20px;
       }
@@ -1635,8 +1600,20 @@
         margin-bottom: 5px;
       } 
     }
+
+
+    @media only screen and (max-width: 1194px){
+      .classhome .class-text h4{
+        margin-bottom: 1.5rem;
+      }
   
-    @media only screen and (max-width: 871px){
+      .classhome .class-text h2{
+        margin-bottom: 0.6rem;
+      }
+    }
+
+
+    @media only screen and (max-width: 1103px){
       .classhome .class-text h2{
         font-size: 17px;
         margin-bottom: 0.4rem;
@@ -1646,12 +1623,26 @@
         font-size: 13px;
       } 
     }
-  
-    @media only screen and (max-width: 760px){
+
+    @media only screen and (max-width: 1015px){
+      .classhome .class-text p{
+        font-size: 12px;
+      } 
+    }
+
+
+    @media only screen and (max-width: 962px){
+      .classhome .class-text p{
+        font-size: 11px;
+      } 
+    }
+
+
+    @media only screen and (max-width: 890px){
       .classhome{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 520px;
         margin: auto;
         margin-top: 3rem;
       }
@@ -1677,6 +1668,10 @@
         margin-bottom: 1rem;
       }
     
+      .classhome .class-text h2 span{
+        color: #bef049;
+      }
+    
       .classhome .class-text p{
         font-size: 18px;
         margin-bottom: 10px;
@@ -1687,28 +1682,28 @@
         width: 100%;
       }
     }
-  
-  
-    @media only screen and (max-width: 657px){
+
+
+    @media only screen and (max-width: 677px){
       .classhome{
         width: 100%;
       }
     }
+
   
-    @media only screen and (max-width:483px){
+    @media only screen and (max-width: 565px){
       .classhome .class-text h2{
         font-size: 25px;
       }
     }
   
-  
-    @media only screen and (max-width:422px){
+    @media only screen and (max-width:475px){
       .classhome .class-text h2{
         font-size: 20px;
       }
     }
   
-    @media only screen and (max-width: 340px){
+    @media only screen and (max-width: 403px){
       .classhome .class-text h2{
         font-size: 17px;
       }
@@ -1718,7 +1713,7 @@
       }
     }
   
-    @media only screen and (max-width: 279px){
+    @media only screen and (max-width: 327px){
       .classhome .class-text h2{
         font-size: 15px;
       }
