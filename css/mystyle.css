@@ -861,16 +861,18 @@ nav a:hover{
     position: relative;
     background-color: #02070f;
     padding: 6rem 0 2rem 2.5rem;
-    border-radius: .25rem;
+     border-radius: 30% 70% 23% 77% / 93% 70% 30% 7%;
     transition: all .3s ease-in-out;
     margin-bottom: 50px;
     box-shadow: 0 1px 5px 1px #02070f;
+      overflow: hidden;
   }
   
   .services_content:focus{ color: #fff; }
   .services_content:hover{
       color: #ff8b00;
       box-shadow: 0 1px 5px 1px #cccccc;
+      border-radius: 30% 70% 30% 70% / 93% 44% 56% 7%;
   }
   .services_content:before{
       content: '';
