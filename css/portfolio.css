@@ -1358,6 +1358,7 @@ min-height:520px;
   background-color: #08101b;
   position: relative;
   overflow: hidden;
+   z-index: 0;
 }
 
   /* @keyframes color{
