@@ -46,6 +46,13 @@
       /* background-color: rgba(27, 47, 69, 0.7); */
       background-color:#0b1421;
       /* background-color:  #1b2f45; */
+     display: flex;;
+     min-height: 100vh;
+     flex-direction: column;
+    }
+
+main{
+    flex: 1 0 auto;
     }
   
     
